@@ -1,3 +1,7 @@
+h1 {
+    text-align: center;
+}
+
 .slider {
     width: 95%;
     margin: auto;
@@ -9,6 +13,7 @@
     padding: 0;
     width: 400%;
     animation: cambio 15s infinite alternate linear;
+    animation-duration: 6s;
 }
 
 .slider li {

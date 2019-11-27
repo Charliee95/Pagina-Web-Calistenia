@@ -25,18 +25,12 @@
     <div class="slider">
         <ul>
             <li>
-
-            </li>
-            <li>
-                <img src="C:\Users\emanu\Desktop\Proyecto-Final\imagenes\10.jpg" alt="imagen 10">
+                <img src="C:\Users\emanu\Desktop\proyecto final\imagenes\10.jpg" alt="imagen 10">
                 <p>Handstand flag, tambien cocnocido como Vertical Bandera.</p>
             </li>
             <li>
-                <img src="C:\Users\emanu\Desktop\Proyecto-Final\imagenes\9.jpg" alt="imagen9">
+                <img src="C:\Users\emanu\Desktop\proyecto final\imagenes\9.jpg" alt="imagen9">
                 <p>Handstand, tambien conocido como vertical.</p>
-            </li>
-            <li>
-
             </li>
         </ul>
     </div>
@@ -44,7 +38,7 @@
     <div>
         <div id="loguearse" class="form">
             <form action="" autocomplete="on">
-                <h1>Logueate para acceder a todo el contenido!</h1>
+                <h1>Logueate para acceder a todo el contenido de la pagina!</h1>
                 <p>
                     <label for="username" class="uname"> Nombre de usuario: </label>
                     <input id="username" name="username" required="required" type="text" placeholder="Tu nombre de usuario" />
@@ -60,13 +54,13 @@
                 </p>
                 <p class="change_link">
                     Aún no eres miembro :(
-                    <a href="#toregister" class="to_register">Regístrate aca!!</a>
+                    <a href="#toregister" class="to_register">Registrate aca!!</a>
                 </p>
             </form>
         </div>
     </div>
     <div id="register" class="form">
-        <form action="mysuperscript.php" autocomplete="on">
+        <form action="/login" method="POST">
             <h1> Registrarse</h1>
             <p>
                 <label for="usernamesignup" class="uname">Tu nombre</label>
@@ -74,15 +68,14 @@
             </p>
             <p>
                 <label for="emailsignup" class="youmail"> Tu e-mail</label>
-                <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="ejemplo@mail.com" />
+                <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="tu e-mail" />
             </p>
             <p>
                 <label for="passwordsignup" class="youpasswd">Tu contraseña </label>
-                <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula, y al menos 8 o más caracteres"
-                />
+                <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número, una letra minúscula y mayúscula y al menos 8 o más caracteres" />
             </p>
             <p>
-                <label for="passwordsignup_confirm" class="youpasswd">Confirma tu contraseña </label>
+                <label for="passwordsignup_confirm" class="youpasswd">Confirme su contraseña </label>
                 <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="" />
             </p>
             <p class="signin button">
