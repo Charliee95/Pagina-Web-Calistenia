@@ -12,7 +12,7 @@ h1 {
     display: flex;
     padding: 0;
     width: 400%;
-    animation: cambio 15s infinite alternate linear;
+    animation: cambio 6s infinite alternate linear;
     animation-duration: 6s;
 }
 
