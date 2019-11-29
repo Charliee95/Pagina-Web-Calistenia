@@ -1,5 +1,5 @@
 var http = require("http")
-var puerto = 3000
+var puerto = process.env.PORT || 3000
 
 var servidor = http.createServer(function(consulta, respuesta) {
     if (consulta.url === '/') {
