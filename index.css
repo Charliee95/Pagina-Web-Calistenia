@@ -1,3 +1,89 @@
+*{
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #E9E8E8;
+}
+
+h2{
+    font-size: 30px;
+}
+
+header{
+    width: 90%;
+    height: 160px;
+    background-color: #737373;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    border-radius: 20px;
+    display: flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+
+.contenedor_redes {
+    width:100px;
+    height:70px;
+    background-color: white;
+    padding-left: 12px;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.contenedor_titulo {
+    width:260px;
+    height:70px;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    align-items:center;
+}
+
+section {
+    width: 91%;
+    height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-top: 8px;
+    background-color: #737373;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.palabra_historia {
+    width: 99%;
+    height: 60px;
+    display: flex;
+    align-items:center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+}
+.contenedor_historia {
+    width: 99%;
+    height: 150px;
+    margin-top:8px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items:center;
+}
+.margen{
+    margin: 5px;
+    font-weight: bold;
+}
+
 .slider {
     width: 99%;
     margin-left: 5px;
@@ -48,62 +134,4 @@
     100% {
         margin-left: -300%;
     }
-}
-
-h1{
-    margin: 0px;
-}
-h2{
-    margin: 0px;
-    margin-left: 5px;
-    font-size: 30px;
-}
-
-p{
-    font-weight: bold;
-}
-
-.margen {
-    margin: 5px;
-}
-
-div {
-    background-color: brown;
-}
-
-header {
-	width: 90%;
-	height: 100px;
-	margin-left: auto;
-    margin-right: auto;
-    background-color: burlywood;
-    margin-top: 0px;
-	
-}
-#cont_titulo {
-    width: 30%;
-    height: 100%;
-    background-color: brown;
-    margin-left: auto;
-    margin-right: auto;
-    
-    margin-bottom: auto;
-    text-align: center; /*alinear texto horizontalmente*/
-    
-
-}
-
-.titulo{
-    font-size: 40px;
-    line-height: 100px;
-}
-
-section{
-    width: 90%;
-    height: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8px;
-    background-color: burlywood;
-
 }
