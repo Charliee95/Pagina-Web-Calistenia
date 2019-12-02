@@ -1,14 +1,12 @@
-var http = require("http")
-var puerto = process.env.PORT || 3000
+var express = require('express');
+var servidor = express();
+var bodyParser = require('body-parser');
 
-var servidor = http.createServer(function(consulta, respuesta) {
-    if (consulta.url === '/') {
-        respuesta.end('bienvenido')
-    } else {
-        respuesta.end('ruta no encontrada')
-    }
-})
+servidor.post('/comentario', function(consulta, respuesta) {
+    respuesta.end('bienvenido')
+});
 
-servidor.listen(puerto, function() {
-    console.log(`prueba servidor ${puerto}`)
-})
+
+servidor.listen(3000, function() {
+    console.log('escuchando en el puerto' + 3000)
+});

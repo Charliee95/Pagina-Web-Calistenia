@@ -1,16 +1,16 @@
-*{
+* {
     font-family: sans-serif;
 }
 
 body {
-    background-color: #E9E8E8;
+    background-color: rgb(28, 142, 207);
 }
 
-h2{
+h2 {
     font-size: 30px;
 }
 
-header{
+header {
     width: 90%;
     height: 160px;
     background-color: #737373;
@@ -19,28 +19,28 @@ header{
     padding-left: 10px;
     border-radius: 20px;
     display: flex;
-	justify-content:flex-start;
-	align-items:center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .contenedor_redes {
-    width:100px;
-    height:70px;
+    width: 100px;
+    height: 70px;
     background-color: white;
     padding-left: 12px;
     border-radius: 10px 0px 0px 10px;
     display: flex;
-	justify-content:space-around;
-	align-items:center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .contenedor_titulo {
-    width:260px;
-    height:70px;
+    width: 260px;
+    height: 70px;
     background-color: white;
     border-radius: 0px 10px 10px 0px;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 section {
@@ -50,17 +50,17 @@ section {
     margin-right: auto;
     border-radius: 20px;
     margin-top: 8px;
-    background-color: #737373;
+    background-color: #974632;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
 }
+
 .palabra_historia {
     width: 99%;
     height: 60px;
     display: flex;
-    align-items:center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 8px;
@@ -68,18 +68,20 @@ section {
     border-radius: 10px;
     justify-content: center;
 }
+
 .contenedor_historia {
     width: 99%;
     height: 150px;
-    margin-top:8px;
+    margin-top: 8px;
     background-color: white;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
-.margen{
+
+.margen {
     margin: 5px;
     font-weight: bold;
 }
@@ -89,7 +91,6 @@ section {
     margin-left: 5px;
     margin-right: 5px;
     overflow: hidden;
-    
 }
 
 .slider ul {

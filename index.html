@@ -16,93 +16,89 @@
             <a href="https://www.facebook.com/EmmaCalistenia" target="_blank"> <img src="imagenes/facebook.png" alt="" width="25px" height="25px"> </a>
             <a><img src="imagenes/barra.png" alt="" width="25px" height="65px"> </a>
         </div>
+
         <div class="contenedor_titulo">
-                <h1>Street Workout</h1>
+            <h1>Street Workout</h1>
         </div>
     </header>
     <section>
-            <div class="palabra_historia">
-                <h2>Historia</h2>
-            </div>
-            
-            <div class="contenedor_historia">
-                
-                <p class="margen">Esta disciplina nació a mediados del año 1999/2000 en Estados unidos, es un movimiento callejero que surge a partir de la necesidad de entrenar al aire libre sin pagar membresías costosas en gimnasios, la idea es valerse de elementos que se encuentran
-                en las plazas como barras, paralelas, bancos etc. Como medio, se utiliza el peso corporal solamente para desarrollar trucos estáticos y dinámicos (de fuerza y movimiento). También permite incluir a todas las personas sin importar edad o género,
-                logrando ayudar a mejorar su aspecto físico y mental, es un movimiento urbano y de carácter inclusivo. Hoy en día se hacen torneos, eventos de caridad y demás con el fin de demostrar la belleza y destreza que brinda este deporte volviendo
-                competitiva a las personas que entrenen calistenia.
-                </p>
-            </div>
-            <div class="slider">
-                    <ul>
-                        <li>
-                        </li>
-                        <li>
-                            <img src="imagenes\10.jpg" alt="imagen 10">
-                            <p>Handstand flag, tambien conocido como Vertical Bandera.</p>
-                        </li>
-                        <li>
-                            <img src="imagenes\9.jpg" alt="imagen9">
-                            <p>Handstand, tambien conocido como vertical.</p>
-                        </li>
-                        <li>
-                        </li>
-                    </ul>
-            </div>
+        <div class="palabra_historia">
+            <h2>Historia</h2>
+        </div>
 
-            <div class="margen">
-                    <div id="loguearse" class="form">
-                        <form action="" autocomplete="on">
-                            <h1>Logueate para acceder a todo el contenido!</h1>
-                            <p>
-                                <label for="username" class="uname"> Nombre de usuario: </label>
-                                <input id="username" name="username" required="required" type="text" placeholder="Tu nombre de usuario" />
-                            </p>
-                            <p>
-                                <label for="password" class="youpasswd"> Contraseña:</label>
-                                <input id="password" name="password" required="required" type="password" placeholder="contraseña?" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula y al menos 8 o más caracteres!"
-                                />
-                            </p>
-        
-                            <p class="login button">
-                                <input type="submit" value="Loguearse" />
-                            </p>
-                            <p class="change_link">
-                                Aún no eres miembro :(
-                                <a href="#toregister" class="to_register">Regístrate aca!!</a>
-                            </p>
-                        </form>
-                    </div>
-                </div>
-                <div class="margen" id="register" class="form">
-                    <form action="mysuperscript.php" autocomplete="on">
-                        <h1>Registrarse</h1>
-                        <p>
-                            <label for="usernamesignup" class="uname">Tu nombre</label>
-                            <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="Nombre" />
-                        </p>
-                        <p>
-                            <label for="emailsignup" class="youmail"> Tu e-mail</label>
-                            <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="ejemplo@mail.com" />
-                        </p>
-                        <p>
-                            <label for="passwordsignup" class="youpasswd">Tu contraseña </label>
-                            <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula, y al menos 8 o más caracteres"
-                            />
-                        </p>
-                        <p>
-                            <label for="passwordsignup_confirm" class="youpasswd">Confirma tu contraseña </label>
-                            <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="" />
-                        </p>
-                        <p class="signin button">
-                            <input type="submit" value="Registro" />
-                        </p>
-                        <p class="change_link">
-                            Ya eres miembro! :D
-                            <a href="#tologin" class="to_register">  Loguéate!  </a>
-                        </p>
-                    </form>
-                </div>
+        <div class="contenedor_historia">
+
+            <p class="margen">Esta disciplina nació a mediados del año 1999/2000 en Estados unidos, es un movimiento callejero que surge a partir de la necesidad de entrenar al aire libre sin pagar membresías costosas en gimnasios, la idea es valerse de elementos que se
+                encuentran en las plazas como barras, paralelas, bancos etc. Como medio, se utiliza el peso corporal solamente para desarrollar trucos estáticos y dinámicos (de fuerza y movimiento). También permite incluir a todas las personas sin importar
+                edad o género, logrando ayudar a mejorar su aspecto físico y mental, es un movimiento urbano y de carácter inclusivo. Hoy en día se hacen torneos, eventos de caridad y demás con el fin de demostrar la belleza y destreza que brinda este
+                deporte volviendo competitiva a las personas que entrenen calistenia.
+            </p>
+        </div>
+        <div class="slider">
+            <ul>
+                <li> <img src="imagenes/3.jpg" alt="imagen 3"> </li>
+                <li>
+                    <img src="imagenes\10.jpg" alt="imagen 10">
+                </li>
+
+                <li><img src="imagenes\9.jpg" alt="imagen9"></li>
+
+            </ul>
+        </div>
+
+        <div class="margen">
+            <div id="loguearse" class="form">
+                <form action="/api" method="POST" autocomplete="on">
+                    <h1>Logueate para acceder a todo el contenido!</h1>
+                    <p>
+                        <label for="username" class="nombre-usuario"> Nombre de usuario: </label>
+                        <input id="username" name="username" required="required" type="text" placeholder="Tu nombre de usuario" />
+                    </p>
+                    <p>
+                        <label for="password" class="tu contraseña?"> Contraseña:</label>
+                        <input id="password" name="password" required="required" type="password" placeholder="contraseña?" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula y al menos 8 o más caracteres!"
+                        />
+                    </p>
+
+                    <p class="login button">
+                        <input type="submit" value="Loguearse" />
+                    </p>
+                    <p class="change_link">
+                        Aún no eres miembro :(
+                        <a href="#tologin" class="registro">Regístrate aca!!</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div class="margen" id="register" class="form">
+            <form action="mysuperscript.php" autocomplete="on">
+                <h1>Registrarse</h1>
+                <p>
+                    <label for="usernamesignup" class="uname">Tu nombre</label>
+                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="Nombre" />
+                </p>
+                <p>
+                    <label for="emailsignup" class="youmail"> Tu e-mail</label>
+                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="ejemplo@mail.com" />
+                </p>
+                <p>
+                    <label for="passwordsignup" class="youpasswd">Tu contraseña </label>
+                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula, y al menos 8 o más caracteres"
+                    />
+                </p>
+                <p>
+                    <label for="passwordsignup_confirm" class="youpasswd">Confirma tu contraseña </label>
+                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="" />
+                </p>
+                <p class="signin button">
+                    <input type="submit" value="Registro" />
+                </p>
+                <p class="change_link">
+                    Ya eres miembro! :D
+                    <a href="#tologin" class="to_register">  Loguéate!  </a>
+                </p>
+            </form>
+        </div>
     </section>
 
 </body>
