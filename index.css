@@ -26,7 +26,7 @@ header {
 .contenedor_redes {
     width: 100px;
     height: 70px;
-    background-color: white;
+    background-color: rgba(255, 255, 255,0.9);;
     padding-left: 12px;
     border-radius: 10px 0px 0px 10px;
     display: flex;
@@ -35,12 +35,13 @@ header {
 }
 
 .contenedor_titulo {
-    width: 260px;
+    width: 280px;
     height: 70px;
-    background-color: white;
+    background-color: rgba(255, 255, 255,1);;
     border-radius: 0px 10px 10px 0px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 section {
@@ -64,7 +65,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     margin-top: 8px;
-    background-color: white;
+    background-color: rgba(255, 255, 255,0.5);
     border-radius: 10px;
     justify-content: center;
 }
@@ -73,12 +74,13 @@ section {
     width: 99%;
     height: 150px;
     margin-top: 8px;
-    background-color: white;
+    background-color: rgba(255, 255, 255,0.5);
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .margen {
@@ -91,11 +93,18 @@ section {
     margin-left: 5px;
     margin-right: 5px;
     overflow: hidden;
+    margin-top: 8px;
+    background-color: rgba(255, 255, 255,0.5);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 }
 
 .slider ul {
     display: flex;
-    padding: 0;
+    padding: 5px;
     width: 400%;
     animation: cambio 15s infinite alternate linear;
 }
@@ -135,4 +144,30 @@ section {
     100% {
         margin-left: -300%;
     }
+}
+
+.contenedor_formulario1 {
+    width: 98%;
+    margin-top: 8px;
+    padding-left: 16px;
+    background-color: rgba(255, 255, 255,0.5);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor_formulario2 {
+    width: 98%;
+    margin-top: 8px;
+    padding-left: 16px;
+    background-color: rgba(255, 255, 255,0.5);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
