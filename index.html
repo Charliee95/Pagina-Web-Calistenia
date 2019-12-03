@@ -45,16 +45,14 @@
         <div class="contenedor_formulario1" id="loguearse">
            <form action="/api" method="POST" autocomplete="on">
                 <h1>Logueate para acceder a todo el contenido!</h1>
-                <p>
-                    <label for="username" class="nombre-usuario"> Nombre de usuario: </label>
-                    <input id="username" name="username" required="required" type="text" placeholder="Tu nombre de usuario">
+                </p>
+                    <input id="username" class="boton_input" name="username" required="required" type="text" placeholder="Tu nombre de usuario">
                 </p>
                 <p>
-                    <label for="password" class="tu contraseña?"> Contraseña:</label>
-                    <input id="password" name="password" required="required" type="password" placeholder="contraseña?" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula y al menos 8 o más caracteres!">
+                    <input id="password" class="boton_input" name="password" required="required" type="password" placeholder="Contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula y al menos 8 o más caracteres!">
                 </p>
                 <p class="login button">
-                    <input type="submit" value="Loguearse" />
+                    <input type="submit" value="Loguearse" class="boton_formulario" />
                 </p>
                 <p class="change_link">
                     Aún no eres miembro :(
@@ -67,24 +65,24 @@
             <form action="mysuperscript.php" autocomplete="on">
                 <h1>Registrarse</h1>
                 <p>
-                    <label for="usernamesignup" class="uname">Tu nombre</label>
-                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="Nombre" />
+                    
+                    <input id="usernamesignup" class="boton_input" name="usernamesignup" required="required" type="text" placeholder="Nombre" maxlength="30" />
                 </p>
                 <p>
-                    <label for="emailsignup" class="youmail"> Tu e-mail</label>
-                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="ejemplo@mail.com" />
+                    
+                    <input id="emailsignup" class="boton_input" name="emailsignup" required="required" type="email" placeholder="Correo electronico" maxlength="40" />
                 </p>
                 <p>
-                    <label for="passwordsignup" class="youpasswd">Tu contraseña </label>
-                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula, y al menos 8 o más caracteres"
+                    
+                    <input id="passwordsignup" class="boton_input" name="passwordsignup" required="required" type="password" placeholder="Contraseña" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula, y al menos 8 o más caracteres"
                     />
                 </p>
                 <p>
-                    <label for="passwordsignup_confirm" class="youpasswd">Confirma tu contraseña </label>
-                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="" />
+                    
+                    <input id="passwordsignup_confirm" class="boton_input" name="passwordsignup_confirm" required="required" type="password" maxlength="20" placeholder="Reingrese contraseña" />
                 </p>
                 <p class="signin button">
-                    <input type="submit" value="Registro" />
+                    <input type="submit" value="Registro" class="boton_formulario" />
                 </p>
                 <p class="change_link">
                     Ya eres miembro! :D

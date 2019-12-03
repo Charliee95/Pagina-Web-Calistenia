@@ -7,9 +7,13 @@ body {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 35px;
 }
 
+p{
+    font-size: 20px;
+
+}
 header {
     width: 90%;
     height: 160px;
@@ -49,7 +53,7 @@ section {
     height: 1500px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-top: 8px;
     background-color: #974632;
     display: flex;
@@ -58,7 +62,7 @@ section {
 }
 
 .palabra_historia {
-    width: 99%;
+    width: 30%;
     height: 60px;
     display: flex;
     align-items: center;
@@ -66,7 +70,7 @@ section {
     margin-right: auto;
     margin-top: 8px;
     background-color: rgba(255, 255, 255,0.5);
-    border-radius: 10px;
+    border-radius: 8px;
     justify-content: center;
 }
 
@@ -75,7 +79,7 @@ section {
     height: 150px;
     margin-top: 8px;
     background-color: rgba(255, 255, 255,0.5);
-    border-radius: 10px;
+    border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -95,7 +99,7 @@ section {
     overflow: hidden;
     margin-top: 8px;
     background-color: rgba(255, 255, 255,0.5);
-    border-radius: 10px;
+    border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
     
@@ -104,7 +108,7 @@ section {
 
 .slider ul {
     display: flex;
-    padding: 5px;
+    padding: 8px;
     width: 400%;
     animation: cambio 15s infinite alternate linear;
 }
@@ -151,12 +155,12 @@ section {
     margin-top: 8px;
     padding-left: 16px;
     background-color: rgba(255, 255, 255,0.5);
-    border-radius: 10px;
+    border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
 }
 
 .contenedor_formulario2 {
@@ -164,10 +168,36 @@ section {
     margin-top: 8px;
     padding-left: 16px;
     background-color: rgba(255, 255, 255,0.5);
-    border-radius: 10px;
+    border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
+}
+
+.boton_input {
+	height: 25px;
+	
+    border: 1px solid gray;
+    font-family: inherit;
+    font-size: 16px;
+	font-weight: bold;
+}
+
+input, textarea, select,option,button {
+	display: block;
+    width: 100%;
+    padding: 0;
+}
+
+.boton_formulario {
+	width: 40%;
+	height: 25px;
+	background-color: ;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
 }
