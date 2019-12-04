@@ -2,7 +2,7 @@ var express = require('express');
 var servidor = express();
 var bodyParser = require('body-parser');
 
-servidor.post('/comentario', function(consulta, respuesta) {
+servidor.post('/', function(consulta, respuesta) {
     respuesta.end('bienvenido')
 });
 
