@@ -9,24 +9,6 @@ body {
     /*background-color: rgb(28, 142, 207); */
 }
 
-div form h1 {
-    color: white;
-}
-
-section h2 {
-    font-size: 35px;
-    color: white;
-}
-
-div {
-    border: 1px solid white;
-}
-
-p {
-    font-size: 20px;
-    color: white;
-}
-
 header {
     width: 90%;
     height: 160px;
@@ -86,20 +68,6 @@ header {
     justify-content: center;
 }
 
-section {
-    width: 91%;
-    height: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px;
-    margin-top: 8px;
-    background-color: rgb(112, 191, 255);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border: 1px solid white;
-}
-
 .historia {
     width: 30%;
     height: 60px;
@@ -155,6 +123,76 @@ section {
     height: 300px;
 }
 
+.formulario1 {
+    width: 98%;
+    margin-top: 8px;
+    padding-left: 16px;
+    background-color: rgba(0, 140, 255);
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.boton_input {
+    height: 25px;
+    border: 1px solid gray;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.boton_formulario {
+    width: 40%;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario2 {
+    width: 98%;
+    margin-top: 8px;
+    padding-left: 16px;
+    background-color: rgba(0, 140, 255);
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+section {
+    width: 91%;
+    height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-top: 8px;
+    background-color: rgb(112, 191, 255);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid white;
+}
+
+section h2 {
+    font-size: 35px;
+    color: white;
+}
+
+div {
+    border: 1px solid white;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
 @keyframes cambio {
     0% {
         margin-left: 0;
@@ -182,38 +220,6 @@ section {
     }
 }
 
-.formulario1 {
-    width: 98%;
-    margin-top: 8px;
-    padding-left: 16px;
-    background-color: rgba(0, 140, 255);
-    border-radius: 8px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-}
-
-.formulario2 {
-    width: 98%;
-    margin-top: 8px;
-    padding-left: 16px;
-    background-color: rgba(0, 140, 255);
-    border-radius: 8px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-}
-
-.boton_input {
-    height: 25px;
-    border: 1px solid gray;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: bold;
-}
-
 input,
 textarea,
 select,
@@ -222,14 +228,4 @@ button {
     display: block;
     width: 100%;
     padding: 0;
-}
-
-.boton_formulario {
-    width: 40%;
-    height: 25px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
 }
