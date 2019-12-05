@@ -1,107 +1,99 @@
 html {
-    font-family: sans-serif;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
     font-size: 12px;
 }
 
 body {
-    background-image: url(imagenes/backgrounds/3.jpg);
-    background-repeat: repeat;
-    /*background-color: rgb(28, 142, 207); */
+    background-color: snow;
+    border-color: black;
+    border-style: hidden;
+    border-radius: 6px;
 }
 
-header {
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+.menu {
+    background-image: url(imagenes/backgrounds/widebacklever.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contenedor {
     width: 90%;
-    height: 160px;
-    background-color: rgb(112, 191, 255);
-    /*#737373*/
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 20px;
+    max-width: 1280px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    width: 660px;
+    height: 330px;
+}
+
+.menu-icon {
+    display: block;
+    float: right;
+}
+
+.menu.contenedor {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid white;
 }
 
-.redes {
-    width: 250px;
-    height: 60px;
-    background-color: rgb(255, 255, 255);
-    padding-left: 0px;
-    border-top: 1px solid rgba(0, 140, 255, 1);
-    border-bottom: 1px solid rgba(0, 140, 255, 1);
-    border-left: 1px solid rgba(0, 140, 255, 1);
-    border-right: 1px solid rgba(0, 140, 255, 1);
-    border-radius: 10px 10px 10px 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+header .logo {
+    color: #000;
+    font-size: 23px;
+    font-weight: bold;
 }
 
 .titulo {
     width: 350px;
     height: 100px;
-    background-color: rgb(255, 255, 255);
-    border-top: 1px solid rgba(0, 140, 255, 1);
-    border-bottom: 1px solid rgba(0, 140, 255, 1);
-    border-right: 1px solid rgba(0, 140, 255, 1);
-    border-left: 1px solid rgba(0, 140, 255, 1);
-    border-radius: 10px 0px 0px 10px;
-    border-radius: 10px 10px 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.botonera {
-    width: 250px;
-    height: 150px;
-    background-color: rgb(255, 255, 255);
-    border-top: 1px solid rgba(0, 140, 255, 1);
-    border-bottom: 1px solid rgba(0, 140, 255, 1);
-    border-right: 1px solid rgba(0, 140, 255, 1);
-    border-left: 1px solid rgba(0, 140, 255, 1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+    margin: 10px;
+    padding: 10px;
 }
 
 .historia {
-    width: 30%;
-    height: 60px;
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8px;
-    background-color: rgba(0, 140, 255, 1);
-    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
     justify-content: center;
 }
 
 .contenedor_historia {
-    width: 99%;
-    height: 150px;
-    margin-top: 8px;
-    background-color: rgba(0, 140, 255, 1);
-    border-radius: 8px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 5px;
+    padding: 5px;
 }
 
 .slider {
-    width: 99%;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     overflow: hidden;
-    margin-top: 8px;
-    background-color: rgba(0, 140, 255);
-    border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -123,46 +115,44 @@ header {
     height: 300px;
 }
 
+.caja_formularios {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 984px;
+    height: 170px;
+}
+
 .formulario1 {
     width: 98%;
     margin-top: 8px;
     padding-left: 16px;
-    background-color: rgba(0, 140, 255);
-    border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .boton_input {
     height: 25px;
-    border: 1px solid gray;
     font-family: inherit;
     font-size: 16px;
     font-weight: bold;
-}
-
-.boton_formulario {
-    width: 40%;
-    height: 25px;
-    font-weight: bold;
     text-align: center;
-    font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    color: tomato;
 }
 
 .formulario2 {
     width: 98%;
     margin-top: 8px;
     padding-left: 16px;
-    background-color: rgba(0, 140, 255);
-    border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 section {
@@ -170,27 +160,14 @@ section {
     height: 1500px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 15px;
     margin-top: 8px;
-    background-color: rgb(112, 191, 255);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 1px solid white;
 }
 
 section h2 {
     font-size: 35px;
-    color: white;
-}
-
-div {
-    border: 1px solid white;
-}
-
-p {
-    font-size: 20px;
-    color: white;
 }
 
 @keyframes cambio {
@@ -218,14 +195,4 @@ p {
     100% {
         margin-left: -300%;
     }
-}
-
-input,
-textarea,
-select,
-option,
-button {
-    display: block;
-    width: 100%;
-    padding: 0;
 }
