@@ -1,24 +1,27 @@
 var MongoClient = require('mongodb').MongoClient;
 
-var uri = 'mongodb+srv://emanuel_18:EueM_Zasd6GYeZ7@base-de-datos-pagina-web-balww.mongodb.net/test?retryWrites=true&w=majority';
+var url = 'mongodb+srv://emanuel_18:EueM_Zasd6GYeZ7@base-de-datos-pagina-web-balww.mongodb.net/test?retryWrites=true&w=majority';
 
-var client = new MongoClient(uri, { useNewUrlParser: true });
+var dbNombre = 'test';
+var bd;
 
-client.connect(err => {
+var cliente = new MongoClient(url, { useUnifiedTopology: true })
+
+cliente.connect(async function(err, client) {
     if (err) {
-        console.log('hubo un error' + err)
+        console.error(err)
+        process.exit(1)
     }
-    console.log('coneccion exitosa');
-    var post =
-        app.post("./", function(req, res) {
-            db.collection("replicaset_mongo_client_collection").find({}, function(err, docs) {
-                docs.each(function(err, doc) {
-                    if (doc) {
-                        console.log(doc);
-                    } else {
-                        res.end();
-                    }
-                });
-            });
-        });
+
+    console.log('Conectado exitosamente!');
+    bd = client.db(dbNombre);
+    await bd.collection('prueba').insertOne({
+        nombre: 'emanuel',
+        edad: 25,
+        profesor: { nombre: 'norman' }
+    })
+    bd.collection('prueba').insertMany([
+        { nombre: 'emanuel' }, { nombre: 'norman' }
+    ])
+
 });
