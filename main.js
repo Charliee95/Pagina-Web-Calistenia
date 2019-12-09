@@ -1,17 +1,24 @@
-const MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb+srv://emanuel_18:<EueM_Zasd6GYeZ7>@base-de-datos-pagina-web-balww.mongodb.net/test?retryWrites=true&w=majority'
+var MongoClient = require('mongodb').MongoClient;
 
-var nombre_base_datos = 'emanuel_18';
+var uri = 'mongodb+srv://emanuel_18:EueM_Zasd6GYeZ7@base-de-datos-pagina-web-balww.mongodb.net/test?retryWrites=true&w=majority';
 
-ClientRect.Mongo.connect(url, function(err, cliente) {
+var client = new MongoClient(uri, { useNewUrlParser: true });
+
+client.connect(err => {
     if (err) {
-        console.log('hubo un error' + JSON.stringify(err))
-        process.exit(1)
+        console.log('hubo un error' + err)
     }
-    console.log('conexion exitosa');
-
-    var db = cliente.db(nombre_base_datos)
-    db.collection('registrados').insertOne({ nombre: 'emanuel_18' })
-    cliente.close();
-
+    console.log('coneccion exitosa');
+    var post =
+        app.post("./", function(req, res) {
+            db.collection("replicaset_mongo_client_collection").find({}, function(err, docs) {
+                docs.each(function(err, doc) {
+                    if (doc) {
+                        console.log(doc);
+                    } else {
+                        res.end();
+                    }
+                });
+            });
+        });
 });

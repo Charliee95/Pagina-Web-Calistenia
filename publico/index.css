@@ -1,0 +1,147 @@
+html {
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    font-size: 12px;
+}
+
+body {
+    background-color: snow;
+    border-color: black;
+    border-style: hidden;
+    border-radius: 6px;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+.menu {
+    background-image: url(imagenes/backgrounds/widebacklever.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    width: 660px;
+    height: 330px;
+}
+
+.menu-icon {
+    display: block;
+    float: right;
+}
+
+.menu.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #000;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.titulo {
+    width: 350px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+.historia {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.contenedor_historia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.slider {
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider ul {
+    display: flex;
+    padding: 8px;
+    width: 400%;
+    animation: cambio 15s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 300px;
+    height: 300px;
+}
+
+.formulario.log {
+    font-family: 'Libre Baskerville', serif;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
