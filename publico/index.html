@@ -3,27 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="index.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Bevan&display=swap');
-    </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
-    </style>
-    <title>Street Workout & Calistenia</title>
+    <title>CREB Calistenia</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Poppins:300,400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
+
+
     <header>
         <div class="menu">
             <div class="contenedor">
-                <p>Movimiento Calistenico</p>
-                <img src="imagenes/logos/menu.png" class="menu-icon" alt="">
+                <p class="logo">CREB Calistenia</p>
+
                 <nav>
                     <ul>
-                        <li><a href="">Inicio</a></li>
                         <li><a href="">Sobre nosotros</a></li>
                         <li><a href="">Contacto</a></li>
                     </ul>
@@ -31,48 +30,75 @@
             </div>
         </div>
     </header>
-    <div class="historia">
-        <h2>Historia</h2>
-    </div>
 
-    <div class="contenedor_historia">
-        <p>Esta disciplina nació a mediados del año 1999/2000 en Estados unidos, es un movimiento callejero que surge a partir de la necesidad de entrenar al aire libre sin pagar membresías costosas en gimnasios, la idea es valerse de elementos que se encuentran
-            en las plazas como barras, paralelas, bancos etc. Como medio, se utiliza el peso corporal solamente para desarrollar trucos estáticos y dinámicos (de fuerza y movimiento). También permite incluir a todas las personas sin importar edad o género,
-            logrando ayudar a mejorar su aspecto físico y mental, es un movimiento urbano y de carácter inclusivo. Hoy en día se hacen torneos, eventos de caridad y demás con el fin de demostrar la belleza y destreza que brinda este deporte volviendo
-            competitiva a las personas que entrenen calistenia.</p>
+    <section id="intro">
+        <div class="izquierda">
+            <H1>CREB CALISTENIA</H1>
+        </div>
+        <div class="izquierda2">
+            <a href="">Registrarse</a>
+            <a href="">Iniciar sesión</a>
+        </div>
+    </section>
 
-    </div>
-    <div class="slider">
-        <ul>
-            <li><img src="publico/imagenes/calistenia/3.jpg" alt="imagen 3"></li>
-            <li><img src="publico/imagenes/calistenia/10.jpg" alt="imagen 10"></li>
-            <li><img src="publico/imagenes/calistenia/9.jpg" alt="imagen9"></li>
-        </ul>
-    </div>
+    <section id="programs">
+        <div class="contenedor">
 
-    <div class="formulario_log">
-        <form action="/api/login" method="POST" autocomplete="on">
-            <h1>Logueate para acceder a todo el contenido</h1>
-            <fieldset>
-                <label>usuario:</label>
-                <input id="nombre" name="nombre" required>
-            </fieldset>
+            <h1>Historia de la disciplina</h1>
+            <div class="contenedor-programs">
+                <p>
+                    Esta disciplina nació a mediados del año 1999/2000 en Estados unidos, es un movimiento callejero que surge a partir de la necesidad de entrenar al aire libre sin pagar membresías costosas en gimnasios, la idea es valerse de elementos que se encuentran
+                    en las plazas como barras, paralelas, bancos etc. Como medio, se utiliza el peso corporal solamente para desarrollar trucos estáticos y dinámicos (de fuerza y movimiento). También permite incluir a todas las personas sin importar edad
+                    o género, logrando ayudar a mejorar su aspecto físico y mental, es un movimiento urbano y de carácter inclusivo. Hoy en día se hacen torneos, eventos de caridad y demás con el fin de demostrar la belleza y destreza que brinda este
+                    deporte volviendo competitiva a las personas que entrenen calistenia.
+                </p>
+            </div>
+        </div>
+    </section>
 
-            <fieldset>
-                <label>password:</label>
-                <input id="pass" name="pass" required>
-            </fieldset>
-            <button type="submit">loguearse</button>
-    </div>
+    <section id="section-video">
+        <div class="contenedor">
+            <video id="video" width="900px" height="600px" src="imagenes/video.mp4"></video>
+            <div class="botones">
+                <button id="boton" onclick="playVideo()"><i class="far fa-play-circle"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var video = document.getElementById('video');
+        var boton = document.getElementById('boton');
+
+        function playVideo() {
+            video.play();
+            boton.style.display = 'none';
+        }
+
+        video.addEventListener('ended', function() {
+            boton.style.display = 'block';
+        })
+    </script>
+
+    <section id="testimonials">
+        <div class="contenedor">
+            <h2>Galeria de imagenes</h2>
 
 
+    </section>
 
-
-
-
-
-
-    <script src="index.js"></script>
+    <section id="contacto">
+        <div class="izquierda">
+            <p></p>
+            <h2></h2>
+            <form action="" method="post">
+                <input type="text" placeholder="Nombre" name="nombre">
+                <input type="email" placeholder="email" name="correo electronico">
+                <textarea placeholder="Mensaje" name="mensaje"></textarea>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
