@@ -6,7 +6,6 @@ body {
 
 .contenedor {
     width: 90%;
-    max-width: 1280px;
     margin: auto;
 }
 
@@ -27,9 +26,18 @@ header .logo {
     font-weight: bold;
 }
 
+header .logo2 {
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    width: 150px;
+    height: 80px;
+}
+
 nav ul li {
     display: inline-block;
     margin: 0 20px;
+    font-weight: bold;
 }
 
 nav ul li a {
@@ -117,7 +125,8 @@ section div a {
 }
 
 #programs {
-    padding-top: 90px;
+    padding-top: 10px;
+    height: 300px;
     text-align: center;
     font-family: 'Oswald';
     background-color: tomato;
@@ -127,10 +136,7 @@ section div a {
     color: red;
 }
 
-#programs .cero {
-    font-size: 80px;
-    margin-bottom: 0;
-}
+
 
 #programs .ini {
     letter-spacing: 18px;
