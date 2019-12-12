@@ -136,8 +136,6 @@ section div a {
     color: red;
 }
 
-
-
 #programs .ini {
     letter-spacing: 18px;
     font-size: 15px;
@@ -187,7 +185,7 @@ section div a {
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 24px;
     letter-spacing: 4px;
     margin: 0;
     text-align: left;
@@ -212,12 +210,14 @@ h3 {
 }
 
 #section-video {
-    padding-top: 90px;
+    margin: 0%;
     text-align: center;
 }
 
 #section-video .contenedor {
     position: relative;
+    margin: 0 auto;
+    justify-content: space-around;
 }
 
 #section-video .botones {
@@ -253,86 +253,12 @@ h3 {
     width: 47%;
 }
 
-#join .derecha {
-    width: 53%;
-    position: relative;
-    background: url(imagenes/join-back.jpg);
-    background-size: cover;
-}
-
-#join .izquierda a {
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 15px 24px;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Oswald';
-    letter-spacing: 5px;
-    position: absolute;
-    top: 8%;
-    left: 32%;
-}
-
 #join #uno {
     position: absolute;
     top: 26%;
     left: 56%;
     z-index: 1;
     width: 44%;
-}
-
-#join #dos {
-    position: absolute;
-    top: -44%;
-}
-
-#join #tres {
-    position: absolute;
-    left: 47%;
-    top: 24%;
-    width: 44%;
-}
-
-#testimonials {
-    padding-top: 90px;
-    text-align: center;
-}
-
-#testimonials h2 {
-    font-size: 63px;
-    font-weight: 100;
-    letter-spacing: 16px;
-    margin: 0;
-    margin-bottom: 36px;
-    font-family: 'Oswald';
-}
-
-#testimonials a {
-    font-family: 'Oswald';
-}
-
-.contenedor-testimonials {
-    display: flex;
-    margin-top: 90px;
-    justify-content: center;
-}
-
-.testimonial {
-    width: 40%;
-    margin-right: 40px;
-}
-
-.testimonial .contenido {
-    display: flex;
-}
-
-.testimonial p {
-    color: #666;
-    font-size: 15px;
-    text-align: left;
-    margin-left: 24px;
-    line-height: 30px;
-    font-family: 'Open Sans';
 }
 
 p.nombre {
@@ -424,6 +350,10 @@ input[type="submit"] {
     margin-top: 20px;
 }
 
+.contenedor.p {
+    color: white;
+}
+
 .menu-icon {
     display: none;
 }
@@ -509,6 +439,12 @@ input[type="submit"] {
     }
     #section-video {
         padding-top: 0;
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
     }
     #join {
         flex-direction: column;
@@ -535,8 +471,8 @@ input[type="submit"] {
     #join img {
         width: 63%;
     }
-    #testimonials {
-        padding-top: 390px;
+    #galeria {
+        margin: 0 auto;
     }
     #testimonials h2 {
         font-size: 24px;
@@ -570,9 +506,6 @@ input[type="submit"] {
     #contacto form textarea {
         width: 82%;
     }
-    input[type="submit"] {
-        float: LEFT;
-    }
     #contacto .derecha {
         padding: 5px 18px 50px 17px;
         width: 91%;
@@ -580,4 +513,53 @@ input[type="submit"] {
     .pass {
         padding: 13px;
     }
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+div#slider {
+    overflow: hidden;
+}
+
+div#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite;
 }
