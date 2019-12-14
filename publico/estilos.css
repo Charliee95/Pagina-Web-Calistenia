@@ -546,7 +546,11 @@ input[type="submit"] {
 }
 
 div#slider {
+    width:80%;
+    height: 1080px;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div#slider figure img {
@@ -561,5 +565,5 @@ div#slider figure {
     left: 0;
     text-align: left;
     font-size: 0;
-    animation: 30s slidy infinite;
+    animation: 20s slidy infinite;
 }
