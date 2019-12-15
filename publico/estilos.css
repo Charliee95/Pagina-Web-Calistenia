@@ -212,6 +212,7 @@ h3 {
 #section-video {
     margin: 0%;
     text-align: center;
+    border-color: #000 solid;
 }
 
 #section-video .contenedor {
@@ -352,10 +353,6 @@ input[type="submit"] {
 
 .contenedor.p {
     color: white;
-}
-
-.menu-icon {
-    display: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -546,7 +543,7 @@ input[type="submit"] {
 }
 
 div#slider {
-    width:80%;
+    width: 80%;
     height: 1080px;
     overflow: hidden;
     margin-left: auto;

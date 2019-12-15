@@ -52,27 +52,16 @@
     </section>
 
     <section id="section-video">
-        <div class="contenedor">
-            <video id="video" width="900px" height="600px" src="imagenes/video.mp4"></video>
-            <div class="botones">
-              <button id="boton" onclick="playVideo()"><i class="far fa-play-circle"></i></button>
-            </div>
-          </div>
+        <button onclick="playPause()">Reproducir/Pausar</button>
+        <button onclick="reload()">Recargar</button>
+        <button onclick="makeLarge()">Maximizar</button>
+        <button onclick="makeSmall()">Minimizar</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video controls id="video" width="900px" height="600px" type="mpeg4" src="C:\Users\emanu\Desktop\Pagina-Web-Calistenia\publico\videos\video.mp4">	
+        <p>tu navegador no soporta este formato</p>
+        </video>
     </section>
-
-    <script>
-        var video = document.getElementById('video');
-        var boton = document.getElementById('boton');
-
-        function playVideo() {
-            video.play();
-            boton.style.display = 'none';
-        }
-
-        video.addEventListener('ended', function() {
-            boton.style.display = 'block';
-        })
-    </script>
 
     <section id="galeria">
         <h2>Galeria de imagenes</h2>
@@ -114,6 +103,7 @@
             </div>
         </section>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
